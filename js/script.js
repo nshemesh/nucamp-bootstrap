@@ -11,4 +11,19 @@ $(function() {
             $("#carouselButton").children("i").addClass("fa-pause"); 
         }
     });
+    
+        $('#myModal').on('show.bs.modal', function () {
+            $('#myInput').trigger('focus')
+          })
+
+    });
+
+        $('#reserveButton').click(function () {
+            $('#reserveModal').modal('show')
+
+    });
+
+    $('#loginButton').click(function () {
+        $('#loginButton').modal('show')
+
 });
